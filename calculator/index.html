@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>calculator page</title>
+</head>
+<body>
+    <div class="cal-temp">
+        <div class="cal-screen">
+            <textarea id="display" disabled></textarea>
+            <div class="cal-ans">
+                <p id="total" value="0">0</p>
+            </div>
+        </div>
+        <div class="cal-button">
+            <div class="btm-row one">
+                <button onclick="clearScreen()">C</button>
+                <button onclick="deleteChar()">del</button>
+                <button onclick="negativeNum()">( - )</button>
+                <button onclick="division()">/</button>
+            </div>
+            <div class="btm-row two">
+                <button onclick="addNumber(7)">7</button>
+                <button onclick="addNumber(8)">8</button>
+                <button onclick="addNumber(9)">9</button>
+                <button onclick="multiplication()">*</button>
+            </div>
+            <div class="btm-row three">
+                <button onclick="addNumber(4)">4</button>
+                <button onclick="addNumber(5)">5</button>
+                <button onclick="addNumber(6)">6</button>
+                <button onclick="substitution()">-</button>
+            </div>
+            <div class="btm-row four">
+                <button onclick="addNumber(1)">1</button>
+                <button onclick="addNumber(2)">2</button>
+                <button onclick="addNumber(3)">3</button>
+                <button onclick="addition()">+</button>
+            </div>
+            <div class="btm-row five">
+                <button onclick="decimal()">.</button>
+                <button onclick="addNumber(0)">0</button>
+                <button onclick="usePrevAns()">ans</button>
+                <button onclick="getTotal()">=</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="jsFunction.js"></script>
+</body>
+</html>
